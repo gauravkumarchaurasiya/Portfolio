@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-lightblack: #1f1f1f;
+  --color: #1d9bf0;
+  --color2: #1d9bf0;
+  /* 49 */
+}
+body {
+  color: white;
+  transition: all 1s ease;
+}
+/* ######### Global ##### */
+a {
+    color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btn{
+  /* padding: 10rem; */
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  padding: .5rem 1rem;
+}
+.btn:hover{
+  opacity: .85;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-spacebtw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-spaceevenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cardinfo-h3 {
+  font-size: 2rem;
+}
+.cardinfo-p {
+  font-size: 1.3rem;
+  margin: 5px;
+}
+
+/* ##### Header CSS #### */
+
+header {
+  background-color: var(--color-lightblack);
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  height: 10vh;
+  /* background-color: red; */
+}
+nav .logo {
+  width: 50px;
+}
+nav ul li {
+  margin: 5px 10px;
+}
+nav li a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color .2s ease-in-out;
+}
+nav li a:hover{
+  color: purple;
+  /* background:purple; */
+}
+header section {
+  /* flex-direction: column   ; */
+  /* background-color:green; */
+  height: 80vh;
+}
+header section .introimg {
+  background-color: rgb(155, 141, 141);
+  /* width: 9rem; */
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  padding: 0.24rem;
+  transition: translate 0.5s;
+}
+header section .introimg img {
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  /* align-content: center; */
+  transition: translate 0.8s;
+}
+header section .introimg img:hover,
+header section .introimg:hover {
+  translate: 2px -10px;
+}
+header section .intro-text {
+  /* background-color: yellow; */
+  margin: 2rem;
+  padding: 2rem;
+}
+header section .intro-text .hi {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  /* display: block; */
+}
+header section .intro-text .iam {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+header section .intro-text .name {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  display: block;
+  font-weight: bold;
+  margin: 0.6rem 0px;
+}
+header section .intro-text span:hover {
+  color: plum;
+}
+header .scroll{
+  width: 1.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  position: sticky;
+  left: 50%;
+}
+
+/* ###### About ####### */
+.sect-1 {
+  height: 100vh;
+  background-color: var(--color-lightblack);
+  /* background-color: var(--color); */
+}
+#about {
+    background-color: rgb(237, 168, 107);
+    /* background-color: aqua; */
+  flex-direction: row;
+  border-radius: 1rem;
+}
+#about .left {
+  padding: 0.4rem;
+  border-radius: 1rem;
+  /* background-color: yellow; */
+  margin-right: 2rem;
+}
+#about .left img {
+  width: 100%;
+  /* background-color: orange; */
+  border-radius: 1rem;
+  text-align: center;
+}
+#about .right {
+  padding: 1rem;
+  /* background-color: rgb(13, 188, 13); */
+  border-top-right-radius: 1rem;
+}
+#about .right h1 {
+    font-size: 2rem;
+    padding: 0 px 0.5rem;
+}
+#about .right p {
+  padding: 0.2rem 0rem;
+}
+#about .right ul li {
+  padding: 0.2rem 0rem;
+}
+#about .right .social-icons img {
+    width: 2.2rem;
+    /* color: white; */
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+#about .right .social-icons .youtube img:hover {
+    background-color: #CD201F;
+    
+}
+#about .right .social-icons .facebook img:hover {
+    background-color: #1877F2;
+    
+}
+#about .right .social-icons .linkedin img:hover {
+    background-color: #0A66C2;
+    
+}
+#about .right .social-icons .twitter img:hover {
+    background-color: #1DA1F2;
+    
+}
+#about .right .social-icons .github img:hover {
+    background-color: rgb(245, 244, 244);
+    
+}
+
+/* £££££££££££ Projects css ££££££££££ */
+.sect-2 {
+  background-color: var(--color-lightblack);
+  height: 100vh;
+}
+.sect-2 #projects .project-1 {
+    color: #000;
+  background-color: rgb(126, 251, 9);
+  height: 40vh;
+  width: 60vw;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.sect-2 #projects .project-1 img {
+  background-color: #000;
+  height: 95%;
+  width: 40%;
+  border-radius: 10px;
+  margin: 2px 8px;
+  /* position: relative; */
+}
+/* .sect-2 #projects .project-1 .project1-1-hover-data{
+    position: absolute;
+    color: white;
+    left: 28rem;
+    top: 115rem;
+    font-size: 2rem;
+    z-index: -5;
+} */
+.sect-2 #projects .project-1 img:hover {
+  opacity: 0.9;
+}
+.sect-2 #projects .project-1 .project-1-info {
+  margin-left: 20px;
+}
+.sect-2 #projects .project-1 .project-1-info h3{
+  font-size: 1.4rem;
+}
+.sect-2 #projects .project-1 .project-1-info h3{
+    font-size: 1.3rem;
+}
+.sect-2 #projects .project-1 .project-1-info p{
+    font-size: 1rem;
+    margin: 5px;
+}
+.sect-2 #projects .project-1 .project-1-info button {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+/* ########## Blogs css ######## */
+
+.sect-3 {
+  background-color: var(--color-lightblack);
+  height: 100vh;
+}
+.sect-3 #blogs {
+  flex-wrap: wrap;
+}
+.sect-3 #blogs .blog-1 {
+  background-color: rgb(188, 56, 78);
+  width: 25%;
+  height: 80vh;
+  /* margin-left: 30px; */
+  border-radius: .5rem;
+}
+.sect-3 #blogs .blog-1 img {
+  background-color: #000;
+  height: 35%;
+  border-radius: 10px;
+  margin: 5px 5px;
+  width: 95%;
+}
+.sect-3 #blogs .blog-info {
+  margin: 10px;
+}
+.sect-3 #blogs .blog-info h3 {
+  font-size: 1.2rem;
+}
+.sect-3 #blogs .blog-info p {
+  font-size: .8rem;
+  margin: 5px;
+}
+.sect-3 #blogs .blog-info a {
+  font-size: .8rem;
+  margin: 5px;
+}
+
+/* ######### contact form ####### */
+.sect-4 {
+  background-color: var(--color-lightblack);
+  height: 100vh;
+}
+.sect-4 #contact {
+  background-color: rgb(226, 18, 84);
+  height: 70vh;
+  width: 60%;
+}
+.sect-4 #contact label {
+  display: block;
+  width: 90%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+}
+.sect-4 #contact input {
+  display: block;
+  font-size: 1.2rem;
+  outline: none;
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+}
+.sect-4 #contact textarea {
+  display: block;
+  font-size: 1.2rem;
+  outline: none;
+  width: 90%;
+  height: 15vh;
+  margin: 5px;
+  padding: 5px;
+}
+/* ######### footer css ##### */
+footer{
+  background-color: var(--color-lightblack);
+  text-align: center;  
+  padding-top: 5px;
+}
+/* ######### background changer ######## */
+.bg-color {
+  background-color: var(--color);
+  transition: all 0.7s ease;
+}
+.bg-color-1 {
+  background-color: rgb(233, 49, 190);
+  transition: all 0.7s ease;
+}
+.bg-color-2 {
+  background-color: rgb(192, 24, 218);
+  transition: all 0.7s ease;
+}
+.bg-color-3 {
+  background-color: rgb(25, 249, 73);
+  transition: all 0.7s ease;
+}
